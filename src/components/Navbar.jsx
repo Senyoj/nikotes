@@ -68,6 +68,9 @@ const Navbar = () => {
                 Sign Up
               </button>
             </div>
+            <div className="bg-primary w-1/2 h-[25rem] absolute top-0 right-0  -z-20 rounded-bl-full hidden lg:block text-white pt-20 pl-5">
+              ad
+            </div>
           </div>
         </div>
         <div className="flex items-center justify-between mt-4 lg:hidden">
@@ -82,20 +85,11 @@ const Navbar = () => {
               )}
             </div>
           </div>
-          <img
-            src={Bars}
-            alt=""
-            onClick={ToggleMobile}
-            className="pl-5"
-          />
+          <img src={Bars} alt="" onClick={ToggleMobile} className="pl-5" />
         </div>
       </div>
 
-      {isMobileOpen && (
-        <div className="relative w-full ">
-    asdad
-        </div>
-      )}
+      {isMobileOpen && <div className="relative w-full ">asdad</div>}
     </div>
   );
 };

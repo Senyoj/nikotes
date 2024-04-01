@@ -105,6 +105,14 @@ function Home() {
       <div>
         <ReusableCarousel title="Trending" itemsToShow={4} slides={Trending} />
       </div>
+
+
+      {/* CTA Section  */}
+
+      <div className="">
+
+      </div>
+      {/* CTA Section  */}
     </React.Fragment>
   );
 }

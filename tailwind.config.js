@@ -16,7 +16,8 @@ module.exports = {
 
         less :'#CCCCCC',
         textColor:'#333333',
-        stroke:'#E99517'
+        stroke:'#E99517',
+        more :'#FF8900',
        
       },
     },
