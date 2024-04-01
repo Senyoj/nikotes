@@ -7,7 +7,7 @@ import { hero_img, hero_imge } from '../assets/index';
 
 function SliderItem({ title, description, imageUrl }) {
   return ( 
-    <div className="w-full h-60 bg-secondary-200 lg:bg-transparent  px-2 md:px-20 relative lg:w-[85%] lg:h-[100vh] md:h-[20rem] lg:-z-50">
+    <div className="w-full h-60 bg-secondary-300 lg:bg-transparent  px-2 md:px-20 relative lg:w-[85%] lg:h-[100vh] md:h-[20rem] lg:-z-50">
       <div className="flex text-white items-end lg:items-center ">
         <div className="flex flex-col  gap- justify-center w-44 lg:w-1/2 lg:p-20 lg:text-textColor md:pt-10">
           <h1 className="font-bold text-5xl lg:text-9xl lg:text-secondary-300">{title}</h1>
