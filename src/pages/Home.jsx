@@ -2,7 +2,9 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 import Carousel from "../components/Carousel";
-// import EmailInput from '../components/EmailInput'
+import EmailInput from "../components/EmailInput";
+import LazyLoad from "../components/LazyLoad";
+import FooterLinks from "../components/FooterLinks";
 import ReusableCarousel from "../components/ReusableCarousel";
 import {
   food,
@@ -23,9 +25,9 @@ import {
   chops1,
   chops2,
   chops3,
+  logo,
 } from "../assets/index";
 import { FaCartPlus } from "react-icons/fa";
-import LazyLoad from "../components/LazyLoad";
 
 function Home() {
   const Trending = [
@@ -81,6 +83,32 @@ function Home() {
     },
   ];
 
+
+  const categories = [
+    {
+      name: 'Company ',
+      links: [
+        { label: 'About', url: '/about' },
+        { label: 'Contact us', url: '/contact' },
+        { label: 'Support', url: '/support' },
+        { label: 'Careers', url: '/careers' },
+      ],
+    },
+    {
+      name: 'Quick link ',
+      links: [
+        { label: 'Order Tracking', url: '/Tracking' },
+        { label: 'FAQs', url: '/FaQs' },
+      ],
+    },
+    {
+      name: 'Legal ',
+      links: [
+        { label: 'Terms & Conditions', url: '/T&C' },
+        { label: 'Privacy Policy', url: '/privacypolicy' },
+      ],
+    },
+  ];
   return (
     <React.Fragment>
       {/* Navigation Bar */}
@@ -118,6 +146,7 @@ function Home() {
       {/* Trending Sectoin  */}
       <div>
         <Carousel title="Trending" itemsToShow={4} slides={Trending} />
+        <Carousel title="New Arrival" itemsToShow={4} slides={Trending} />
       </div>
 
       {/* CTA Section  */}
@@ -178,14 +207,15 @@ function Home() {
               Get 30% off on your first transaction using Winmart mobile app for
               now
             </h1>
-            <div className="flex">
+            p
+            <div className="p flex">
               <img src={Gplay} alt="" />
               <img src={Astore} alt="" />
             </div>
           </div>
         </div>
         <div className=" hidden lg:block">
-          <img src={ads} alt="" className=" sm:" />
+          <img src={ads} alt="" className=" " />
         </div>
       </div>
       {/* CTA Section2 */}
@@ -216,16 +246,34 @@ function Home() {
 
       {/* CTA Section 3 */}
       <div className="bg-more flex justify-center items-center text-white">
-            <div className=" text-center py-20">
-              <h1 className="font-bold text-3xl lg:text-5xl">JOIN WINMART COMMUNITY TO GET <br/> MONTHLY PROMO</h1>
-              <p className="text-xl pt-3">Type your email down below and be wild for big promos</p>
+        <div className=" text-center py-20">
+          <h1 className="font-bold text-3xl lg:text-5xl">
+            JOIN WINMART COMMUNITY TO GET <br /> MONTHLY PROMO
+          </h1>
+          <p className="text-xl pt-3">
+            Type your email down below and be wild for big promos
+          </p>
 
-              <div className="email">
-              {/* <EmailInput/> */}
-              </div>
-            </div>
+          <div className="email flex justify-center items-center pt-10">
+            <EmailInput />
+          </div>
+        </div>
       </div>
       {/* CTA Section 3 */}
+
+      {/* Footer */}
+      <div className="bg-black w-full h-auto text-white p-5 lg:p-20">
+        <div className="flex  items-center justify-start lg:justify-evenly flex-col lg:flex-row gap-20 ">
+          <div className="">
+            <img src={logo} alt="" className="lg:w-[100px]" />
+            <h1>Sunyani, Ghana</h1>
+          </div>
+          <div>
+          <FooterLinks categories={categories} />
+          </div>
+        </div>
+      </div>
+      {/* Footer */}
     </React.Fragment>
   );
 }
