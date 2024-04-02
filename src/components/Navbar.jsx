@@ -7,31 +7,18 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [cartCount, setCartCount] = useState(0);
-  const [selectedCategory, setSelectedCategory] = useState("");
 
   const [isMobileOpen, setIsMobileOpen] = useState(false);
 
-  // Array of categories
-  const categories = [
-    "Sneakers",
-    "Men clothes",
-    "Ladies",
-    "Casio watches",
-    "Win Kitchen",
-    "Stores",
-  ];
-
-  //  adding items to cart
+  
   const AddToCart = () => {
     setCartCount(cartCount + 1);
   };
 
-  // category selection
   const CategoryChange = (e) => {
     setSelectedCategory(e.target.value);
   };
 
-  // toggle mobile  visibility
   const ToggleMobile = () => {
     setIsMobileOpen(!isMobileOpen);
   };
