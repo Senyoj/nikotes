@@ -263,7 +263,7 @@ function Home() {
 
       {/* Footer */}
       <div className="bg-black w-full h-auto text-white p-5 lg:p-20">
-        <div className="flex  items-center justify-start lg:justify-evenly flex-col lg:flex-row gap-20 ">
+        <div className="flex  justify-start lg:justify-evenly flex-col lg:flex-row gap-20 ">
           <div className="">
             <img src={logo} alt="" className="lg:w-[100px]" />
             <h1>Sunyani, Ghana</h1>
