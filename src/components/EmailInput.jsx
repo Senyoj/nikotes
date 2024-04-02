@@ -3,7 +3,7 @@ import { FaSearch } from "react-icons/fa";
 const EmailInput = () => {
   return (
     <div className="bg-[#FEFEFE] bg-opacity-20 p-2 rounded-3xl">
-      <div className="flex items-center  h-[70px] border-2 border-less  rounded-2xl overflow-hidden  lg:w-[409px]">
+      <div className="flex items-center  h-[70px] border-2  rounded-2xl overflow-hidden  lg:w-[409px]">
         <input
           type="email"
           placeholder="YOUR EMAIL"
