@@ -1,4 +1,3 @@
-// data.js
 import { casio_watch, iphone12, brown_jacket, hd_monitor, sneaker, men_clothes, ladies_dress, win_kitchen, stores } from "../assets";
 
 export const Trending = [

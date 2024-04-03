@@ -20,6 +20,8 @@ import chops from "./images/chops.png"
 import chops1 from "./images/chops1.png"
 import chops2 from "./images/chops2.png"
 import chops3 from "./images/chops3.png"
+import ring  from "./images/ring.png"
+import elipse from "./images/elipse.png"
 export {
   Bars,
   logo,
@@ -43,4 +45,6 @@ export {
   chops1,
   chops2,
   chops3,
+  ring,
+  elipse,
 };

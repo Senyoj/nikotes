@@ -26,12 +26,12 @@ import {
   chops2,
   chops3,
   logo,
+  ring,
 } from "../assets/index";
 import { FaCartPlus } from "react-icons/fa";
 import { Trending, categoriesData, categories } from "./Homedata.js";
 
 function Home() {
-  
   return (
     <React.Fragment>
       {/* Navigation Bar */}
@@ -118,7 +118,7 @@ function Home() {
 
       {/* CTA Section2 */}
       <div className="bg-nan w-max-screen-lg  flex  justify-evenly items-center  text-textColor relative overflow-x-hidden">
-        <div className=" p-10 lg:w-1/2">
+        <div className=" p-10 lg:w-1/2 relative ">
           <div className="bg-primary text-white text-5xl font-bold w-max px-8 py-4  -rotate-6">
             <h1 className="rotate-6">PAYDAY</h1>
           </div>
@@ -130,13 +130,13 @@ function Home() {
               Get 30% off on your first transaction using Winmart mobile app for
               now
             </h1>
-            p
             <div className="p flex">
               <img src={Gplay} alt="" />
               <img src={Astore} alt="" />
             </div>
           </div>
         </div>
+
         <div className=" hidden lg:block">
           <img src={ads} alt="" className=" " />
         </div>
