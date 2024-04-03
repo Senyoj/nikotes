@@ -21,6 +21,7 @@ module.exports = {
         non:'#F9F9F9',
         nan:'#F6F6F8',
         linear:'#EC5937',
+        deuy:'#CBD0DA',
        
       },
     },

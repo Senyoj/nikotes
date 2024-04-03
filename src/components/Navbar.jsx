@@ -10,7 +10,6 @@ const Navbar = () => {
 
   const [isMobileOpen, setIsMobileOpen] = useState(false);
 
-  
   const AddToCart = () => {
     setCartCount(cartCount + 1);
   };
@@ -102,12 +101,18 @@ const Navbar = () => {
             style={{ backdropFilter: "blur(10px)" }}
           >
             <div>
-            <button className="bg-textColor bg-opacity-20 p-1" onClick={CloseMobileNav}>
-              <FaTimes />
-            </button>
+              <button
+                className="bg-textColor bg-opacity-20 p-1"
+                onClick={CloseMobileNav}
+              >
+                <FaTimes />
+              </button>
             </div>
             <div className="">
-            <ul className="flex flex-col justify-center items-end gap-5 text-lg font-semibold ">
+              <ul className="flex flex-col  items-end gap-5 text-lg font-semibold ">
+                <button className="px-8  py-1 border-stroke bg-secondary-200 border-2 rounded-xl font-semibold text-lg text-white">
+                  Sign Up
+                </button>
                 <li className="flex justify-center items-center cursor-pointer ">
                   <Link to="">Food App</Link>
                   <img src={win_kitchen} alt="" />
