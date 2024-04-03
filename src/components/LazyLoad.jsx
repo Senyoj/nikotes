@@ -9,10 +9,7 @@ function SliderItem({ title, description, imageUrl }) {
   return (
     <div className="w-full h-60 bg-secondary-300 lg:bg-transparent  px-2 md:px-20 relative lg:w-[85%] lg:h-[100vh] md:h-[20rem] lg:-z-50">
       <div className="flex text-white items-end lg:items-center ">
-        <div
-          className="  flex flex-col items-center gap-5 text-deuy
-        "
-        >
+        <div className="flex flex-col items-center gap-5 text-deuy hidden lg:block" >
           <h1>01</h1>
           <div className="w-1 h-[58px] bg-less "></div>
           <h1>02</h1>
