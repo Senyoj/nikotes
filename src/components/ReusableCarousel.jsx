@@ -57,7 +57,7 @@ const ReusableCarousel = ({ title, itemsToShow, slides }) => {
               <img
                 src={slide.imageUrl}
                 alt={slide.name}
-                className="w-full  object-contain bg-less rounded-tr-2xl rounded-tl-2xl"
+                className="w-full h-40  object-contain bg-less rounded-tr-2xl rounded-tl-2xl"
               />
               <div className="flex justify-evenly items-end bg-non  h-40 py-5 rounded-br-xl rounded-bl-xl ">
                 <div className="flex  flex-col  items-start gap-1">
