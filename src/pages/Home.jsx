@@ -1,41 +1,40 @@
-  import React from "react";
-  import Navbar from "../components/Navbar";
-  import { Link } from "react-router-dom";
-  import Carousel from "../components/Carousel";
-  import EmailInput from "../components/EmailInput";
-  import LazyLoad from "../components/LazyLoad";
-  import FooterLinks from "../components/FooterLinks";
-  import ReusableCarousel from "../components/ReusableCarousel";
-  import {
-    food,
-    sneaker,
-    men_clothes,
-    ladies_dress,
-    win_kitchen,
-    stores,
-    casio_watch,
-    iphone12,
-    brown_jacket,
-    hd_monitor,
-    cta_img,
-    Astore,
-    Gplay,
-    ads,
-    chops,
-    chops1,
-    chops2,
-    chops3,
-    logo,
-    ring,
-  } from "../assets/index";
-  import { FaCartPlus } from "react-icons/fa";
-  import { Trending, categoriesData, categories } from "./Homedata.js";
+import React from "react";
+import Navbar from "../components/Navbar";
+import { Link } from "react-router-dom";
+import Carousel from "../components/Carousel";
+import EmailInput from "../components/EmailInput";
+import LazyLoad from "../components/LazyLoad";
+import FooterLinks from "../components/FooterLinks";
+import ReusableCarousel from "../components/ReusableCarousel";
+import {
+  food,
+  sneaker,
+  men_clothes,
+  ladies_dress,
+  win_kitchen,
+  stores,
+  casio_watch,
+  iphone12,
+  brown_jacket,
+  hd_monitor,
+  cta_img,
+  Astore,
+  Gplay,
+  ads,
+  chops,
+  chops1,
+  chops2,
+  chops3,
+  logo,
+  ring,
+} from "../assets/index";
+import { FaCartPlus } from "react-icons/fa";
+import { Trending, categoriesData, categories } from "./Homedata.js";
 
-  function Home() {
-    return (
-      <React.Fragment>
-        <div className="overflow-x-hidden"> 
-
+function Home() {
+  return (
+    <React.Fragment>
+      <div className="overflow-x-hidden">
         {/* Navigation Bar */}
         <Navbar />
 
@@ -76,7 +75,7 @@
 
         {/* CTA Section  */}
 
-        <div className="bg-more w-max-screen-lg  flex  lg:justify-between md:justify-start items-center  text-textColor relative overflow-hidden">
+        <div className="bg-more w-max-screen-lg  flex  lg:justify-evenly md:justify-start items-center  text-textColor relative overflow-hidden">
           <div className="  lg:block  ">
             <img
               src={cta_img}
@@ -84,14 +83,14 @@
               className=" absolute lg:relative top-0 -right-64 -rotate-12 lg:rotate-0 "
             />
           </div>
-          <div className=" p-10">
+          <div className=" p-10 lg:pr-20">
             <div className="bg-white text-5xl font-bold w-max px-8 py-4  -rotate-6">
               <h1 className="rotate-6">PAYDAY</h1>
             </div>
             <div className="pt-10 flex flex-col gap-3 w-full  ">
               <h1 className="font-bold text-5xl">SALE NOW</h1>
               <p className="text-xl font-medium">
-                There are many variations of <br/> passages of Lorem available
+                There are many variations of <br /> passages of Lorem available
               </p>
               <h3 className="text-2xl font-semibold">1 June - 10 July 2021</h3>
               <p className=" font-medium text-xl">#Terms & Conditions apply</p>
@@ -118,7 +117,11 @@
 
         {/* Top Sales */}
         <div>
-          <ReusableCarousel title="Top Sales" itemsToShow={4} slides={Trending} />
+          <ReusableCarousel
+            title="Top Sales"
+            itemsToShow={4}
+            slides={Trending}
+          />
         </div>
         {/* Top Sales */}
 
@@ -133,8 +136,8 @@
                 DOWNLOAD APP & GET THE COUPON
               </h1>
               <h1 className="">
-                Get 30% off on your first transaction using Winmart mobile app for
-                now
+                Get 30% off on your first transaction using Winmart mobile app
+                for now
               </h1>
               <div className="p flex">
                 <img src={Gplay} alt="" />
@@ -203,9 +206,9 @@
           </div>
         </div>
         {/* Footer */}
-        </div>
-      </React.Fragment>
-    );
-  }
+      </div>
+    </React.Fragment>
+  );
+}
 
-  export default Home;
+export default Home;
