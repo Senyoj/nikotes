@@ -44,11 +44,11 @@ function Home() {
       {/* Hero Section */}
 
       {/* Category Section */}
-      <div className="px-2 ">
+      <div className="px- ">
         <div>
-          <h1 className="text-xl font-semibold py-2">Categories</h1>
+          <h1 className="text-xl font-semibold py-4 px-10">Categories</h1>
         </div>
-        <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6  bg-less">
+        <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6  bg-less p-5">
           {categoriesData.map((category, index) => (
             <div
               key={index}
@@ -76,7 +76,11 @@ function Home() {
 
       <div className="bg-more w-max-screen-lg  flex  justify-between items-center  text-textColor relative overflow-x-hidden">
         <div className="  lg:block  ">
-          <img src={cta_img} alt="" className=" absolute lg:relative top-0 -right-56 -rotate-12 lg:rotate-1 " />
+          <img
+            src={cta_img}
+            alt=""
+            className=" absolute lg:relative top-0 -right-56 -rotate-12 lg:rotate-1 "
+          />
         </div>
         <div className=" p-10">
           <div className="bg-white text-5xl font-bold w-max px-8 py-4  -rotate-6">
