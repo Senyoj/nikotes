@@ -52,7 +52,7 @@ const Carousel = ({ title, itemsToShow, slides }) => {
       </div>
       <Slider ref={sliderRef} {...settings}>
         {slides.map((slide, index) => (
-          <div key={index} className="  items-center p-5 g:px-10 ">
+          <div key={index} className="  items-center px-2 g:px-10 ">
             <img src={slide.imageUrl} alt={slide.name} className="w-full bg-less" />
             <div className="flex justify-evenly items-center  ">
               <div className="flex  flex-col  items-start">
