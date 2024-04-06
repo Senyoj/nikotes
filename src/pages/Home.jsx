@@ -75,8 +75,8 @@ function Home() {
       {/* CTA Section  */}
 
       <div className="bg-more w-max-screen-lg  flex  justify-between items-center  text-textColor relative overflow-x-hidden">
-        <div className=" hidden lg:block">
-          <img src={cta_img} alt="" className=" sm:" />
+        <div className="  lg:block  ">
+          <img src={cta_img} alt="" className=" absolute lg:relative top-0 -right-52 -rotate-12 " />
         </div>
         <div className=" p-10">
           <div className="bg-white text-5xl font-bold w-max px-8 py-4  -rotate-6">
