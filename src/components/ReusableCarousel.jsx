@@ -59,7 +59,7 @@ const ReusableCarousel = ({ title, itemsToShow, slides }) => {
                 alt={slide.name}
                 className="w-full  object-contain bg-less rounded-tr-2xl rounded-tl-2xl"
               />
-              <div className="flex justify-evenly items-end bg-non  h-max py-5 rounded-br-xl rounded-bl-xl ">
+              <div className="flex justify-evenly items-end bg-non  h-40 py-5 rounded-br-xl rounded-bl-xl ">
                 <div className="flex  flex-col  items-start gap-1">
                   <p className="mt-2 text-center font-semibold">{slide.name}</p>
                   <p className="text-center">{slide.price}</p>
