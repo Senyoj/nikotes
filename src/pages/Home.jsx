@@ -79,7 +79,7 @@ function Home() {
           <img
             src={cta_img}
             alt=""
-            className=" absolute lg:relative top-0 -right-56 -rotate-12 lg:rotate-1 "
+            className=" absolute lg:relative top-0 -right-56 -rotate-12 lg:rotate-0 "
           />
         </div>
         <div className=" p-10">
