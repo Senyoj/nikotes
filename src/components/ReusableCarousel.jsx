@@ -53,7 +53,7 @@ const ReusableCarousel = ({ title, itemsToShow, slides }) => {
       <div className="">
         <Slider ref={sliderRef} {...settings}>
           {slides.map((slide, index) => (
-            <div key={index} className=" px-1 lg:px-14 overflow-hidden  ">
+            <div key={index} className=" px-4 lg:px-14 overflow-hidden  ">
               <img
                 src={slide.imageUrl}
                 alt={slide.name}
