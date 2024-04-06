@@ -38,7 +38,7 @@ function Home() {
       <Navbar />
 
       {/* Hero Section */}
-      <div>
+      <div className="w-full">
         <LazyLoad />
       </div>
       {/* Hero Section */}
