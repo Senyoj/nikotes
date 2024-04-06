@@ -69,7 +69,7 @@ const ReusableCarousel = ({ title, itemsToShow, slides }) => {
                   </button>
                 </div>
                 <div className="">
-                  <p className="text-center  text-2xl lg:text-3xl font-semibold ">
+                  <p className="text-center  text-3xl lg:text-3xl font-semibold ">
                     {slide.price}
                   </p>
                 </div>
