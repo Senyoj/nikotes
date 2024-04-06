@@ -34,7 +34,7 @@
   function Home() {
     return (
       <React.Fragment>
-        <div className="overflow-x-hidden">
+        <div className="overflow-x-hidden"> 
 
         {/* Navigation Bar */}
         <Navbar />
@@ -76,7 +76,7 @@
 
         {/* CTA Section  */}
 
-        <div className="bg-more w-max-screen-lg  flex  justify-between items-center  text-textColor relative overflow-x-hidden">
+        <div className="bg-more w-max-screen-lg  flex  justify-between items-center  text-textColor relative overflow-hidden">
           <div className="  lg:block  ">
             <img
               src={cta_img}
